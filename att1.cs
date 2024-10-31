@@ -113,8 +113,11 @@ class Program
             }
 
             long mediaTempo = totalTempo / temp.Length;
-
-
+            Quicksort(Original, 0, tamanho - 1, ref tempMov, ref tempComp);
+             for (int j = 0; j < Original.Length; j++)
+            {
+                 Console.Write(Original[j] + " ");
+            }
 
 
             Console.WriteLine();
